@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+
+        // Pedir al usuario que ingrese la distancia.
+        const x = parseInt(prompt('Ingrese la distancia a recorrer:', ''));
+
+        // Validar si es un numero entero.
+        if (Number.isNaN (x)){
+            document.write('La distancia ingresada no es válida');
+        }
+
+        // Mostrar en pantalla como debera recorrer esa disancia según el numero ingresado.
+        if (x >=0 && x <=1000){
+            document.write('La distancia a recorrer es de ', x , ' metros a pie.');
+        }
+        
+        if (x>1000 && x <=10000){
+            document.write('La distancia a recorrer es de ',x,' metros en bicicleta.')
+        }
+
+        if (x>10000 && x <=30000){
+            document.write('La distancia a recorrer es de ',x,' metros en colectivo.')
+        }
+
+        if (x>30000 && x <=100000){
+            document.write('La distancia a recorrer es de ',x,' metros en auto.')
+        }
+
+        if (x>100000){
+            document.write('La distancia a recorrer es de ',x,' metros en avion.')
+        }
+
+
+    </script>
+</body>
+
+</html>

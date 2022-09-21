@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 2</title>
+</head>
+
+<body>
+    <script>
+        // Uso dos variables como parametro a la hora de elegir numeros aleatorios, en este caso el 1 y el 9999
+        a = 1;
+        b = 9999;
+        mayor = 0;
+        let num = [];
+
+        // Creo un array con 10 numeros aleatorios mediante la condicion "for"
+        for (let i = 0; i < 10; i++) {
+            n = (a + Math.floor(Math.random() * b));
+            document.write('El numero  ', n, '  esta dentro del array.', "<br/>");
+            num[i] = n;
+            if (mayor < num[i]) {
+                mayor = num[i];
+            }
+        }
+        document.write('El numero mayor es ', mayor);  
+    </script>
+</body>
+
+</html>
